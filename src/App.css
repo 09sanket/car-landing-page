@@ -1,38 +1,96 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,800&family=Inconsolata:wght@300&family=Kanit:wght@500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans' , Sans-serif;
+}
+.header{
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://s1.cdn.autoevolution.com/images/news/gallery/the-bugatti-veyron-grand-sport-vitesse-still-is-the-world-s-fastest-production-roadster_3.jpg");
+  background-color: rgba(0, 0,0,0.5);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  padding: 0 7%;
+  transition: background-image 1s;
+}
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.logo{
+  margin-left: 6%;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+nav ul{
+  flex: 1;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav ul li {
+  display: inline-block;
+  margin: 10px 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+nav ul li a:hover{
+  color: tomato;
+}
+nav .btn{
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  border-radius: 30px;
+  margin-left: 150%;
+}
+nav .btn:hover{
+  background: #fff;
+  color: #000;
+}
+button{
+  background: none;
   color: white;
+  font-size: large;
+  font-weight: bolder;
+  cursor: pointer;
+  border: none;
 }
-
-.App-link {
-  color: #61dafb;
+button:hover{
+  color: tomato;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info{
+  width: 100%;
+  padding: 0 7%;
+  display: flex;
+  color: #fff;
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+}
+.info div{
+  margin: 0 20px;
+}
+.info div h2{
+  font-size: 44px;
+  font-weight: 400;
+}
+.info .line{
+  flex: 1;
+  background-color: #fff;
+  height: 4px;
+  margin-top: 30px;
 }
